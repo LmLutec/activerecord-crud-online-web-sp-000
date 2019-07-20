@@ -4,7 +4,7 @@
 # def make_a_new_movie_instance    # def make_a_new_movie_instance
 #   movie = __                     #   movie = Movie.new
 # end                              # end
-require 'pry'
+
 
 def can_be_instantiated_and_then_saved
   movie = Movie.new 
@@ -59,9 +59,6 @@ def can_find_by_multiple_attributes
   # director == "Me"
   
   Movie.find_by(title: "Title", release_date: 2000, director: "Me")
- # binding.pry 
- 
-  
 end
 
 def can_find_using_where_clause_and_be_sorted
